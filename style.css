@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+  background-image: linear-gradient(to right, #00FFFF, #E0FFFF);
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background:#5F9EA0;
+  color: linear-gradient(to right, #8B0000, #000000);
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-image: linear-gradient(to right, #97c8c9, #E0FFFF);
+  width: 65%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #5F9EA0;
+}
+
+/* Responsive layout - when the screen is less than 700px wide*/
+@media screen and (max-width: 700px) {
+	  .row, .navbar {   
+	    flex-direction: column;
+	  }
+	}
